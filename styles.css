@@ -1,0 +1,285 @@
+/*
+ * Tiny Room Studio – Portfolio Website Styles
+ *
+ * This stylesheet defines a clean, modern look for Evelyn's online portfolio.
+ * It uses a harmonious color palette and responsive layout techniques to
+ * ensure the content is easy to read and beautiful across devices.
+ */
+
+/* CSS Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', 'Noto Sans TC', sans-serif;
+    line-height: 1.6;
+    color: #2a2a2a;
+    background-color: #fafafa;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Container to constrain content width */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+/* Hero section */
+.hero {
+    position: relative;
+    height: 70vh;
+    background-image: url('hero.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(2px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.hero-content .tagline {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    max-width: 40rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #ee6c4d;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-weight: 700;
+}
+
+.btn-primary:hover {
+    background-color: #d65d3f;
+}
+
+/* Navigation bar */
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+.navbar a {
+    color: #2a2a2a;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.navbar a:hover {
+    color: #ee6c4d;
+}
+
+/* Sections */
+.section {
+    padding: 3rem 0;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+/* Cards for services */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #ee6c4d;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Pricing grid */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.pricing-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #e6e6e6;
+    padding: 1.5rem;
+    text-align: center;
+    transition: box-shadow 0.2s ease;
+}
+
+.pricing-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #ee6c4d;
+}
+
+.pricing-card .price {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #2a2a2a;
+    margin-bottom: 0.25rem;
+}
+
+.pricing-card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.pricing-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.pricing .note {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #888;
+    text-align: center;
+}
+
+/* Portfolio grid styles */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.portfolio-card {
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.portfolio-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #ee6c4d;
+}
+
+.portfolio-card ul {
+    list-style: disc inside;
+    padding-left: 0;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.portfolio-card li + li {
+    margin-top: 0.25rem;
+}
+
+.portfolio-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Contact section */
+.contact-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.contact-list li {
+    margin-bottom: 0.5rem;
+}
+
+.contact a {
+    color: #ee6c4d;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background-color: #f5f5f5;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+    border-top: 1px solid #e0e0e0;
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    .hero-content .tagline {
+        font-size: 1rem;
+    }
+    .navbar ul {
+        gap: 1rem;
+    }
+}
