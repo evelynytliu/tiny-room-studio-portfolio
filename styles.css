@@ -265,6 +265,14 @@ img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
 }
 
+/* Icon styling for portfolio cards */
+.portfolio-card .work-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 0.75rem;
+    display: block;
+}
+
 /* Contact section */
 .contact-list {
     list-style: none;
