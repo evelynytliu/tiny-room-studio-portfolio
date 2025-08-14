@@ -196,6 +196,30 @@ img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
 }
 
+/* Process section */
+.process-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.process-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #ee6c4d;
+}
+
+.process-column ul,
+.process-column ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.process-column li {
+    margin-bottom: 0.5rem;
+}
+
 .pricing .note {
     margin-top: 1rem;
     font-size: 0.9rem;
@@ -260,6 +284,19 @@ img {
 
 .contact a:hover {
     text-decoration: underline;
+}
+
+/* Ideal clients list styling within the about section */
+.about .ideal-list {
+    list-style: disc inside;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.about .ideal-list li + li {
+    margin-top: 0.25rem;
 }
 
 /* Footer */
